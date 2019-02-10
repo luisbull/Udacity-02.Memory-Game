@@ -3,7 +3,7 @@
  * Brought the card names from HTML file into an array
  */
 
-var icons = ["fa fa-diamond", "fa fa-diamond",
+const icons = ["fa fa-diamond", "fa fa-diamond",
               "fa fa-paper-plane-o", "fa fa-paper-plane-o",
               "fa fa-anchor", "fa fa-anchor",
               "fa fa-bolt", "fa fa-bolt",
@@ -11,6 +11,19 @@ var icons = ["fa fa-diamond", "fa fa-diamond",
               "fa fa-leaf", "fa fa-leaf",
               "fa fa-bicycle", "fa fa-bicycle",
               "fa fa-bomb", "fa fa-bomb"];
+
+
+// Creation and visualisation of cards in the board
+
+const cardsContainer = document.querySelector(".deck"); /* deck class from html file*/
+
+for (let i = 0; i < icons.length; i++){
+  
+  const card = document.createElement("li");
+  card.classList.add("card");
+  card.innerHTML = "<i class ='" + icons[i] + "'</i>"
+  cardsContainer.appendChild(card);
+}
 
 /*
  * Display the cards on the page
