@@ -12,10 +12,11 @@ const icons = ["fa fa-diamond", "fa fa-diamond",
               "fa fa-bicycle", "fa fa-bicycle",
               "fa fa-bomb", "fa fa-bomb"];
 
+const cardsContainer = document.querySelector(".deck"); /* deck class from html file*/
+let shownCards = []; /* this array will store cards clicked */
+let matchedCards = []; /* this array will store matched cards */
 
 // Creation and visualisation of cards in the board
-
-const cardsContainer = document.querySelector(".deck"); /* deck class from html file*/
 
 for (let i = 0; i < icons.length; i++){
   
@@ -31,6 +32,24 @@ for (let i = 0; i < icons.length; i++){
 
       card.classList.add("open", "show");
       shownCards.push(this);
+      
+      // Comparing cards
+      if(this.innerHTML === shownCards[0].innerHTML) {
+        // If we have a match
+        console.log("matched");
+        this.classList.add("match");
+        shownCards[0].classList.add("match");
+        matchedCards.push(this,shownCards[0]);
+
+      }else {
+        // If we DON'T have a match
+        console.log("no matched");
+        this.classList.remove("open", "show");
+        shownCards[0].classList.remove("open", "show");
+        openedCards = [];
+      }
+
+      shownCards = [] /* it will reset count so it can check for a match every 2 clicks */
       
     } else {
         // If we don't have any SHOWN cards
