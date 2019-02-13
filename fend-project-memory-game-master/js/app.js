@@ -23,6 +23,22 @@ for (let i = 0; i < icons.length; i++){
   card.classList.add("card");
   card.innerHTML = "<i class ='" + icons[i] + "'</i>"
   cardsContainer.appendChild(card);
+  
+  card.addEventListener("click", function() {
+
+    //If we have existing SHOWN card
+    if(shownCards.length === 1) {
+
+      card.classList.add("open", "show");
+      shownCards.push(this);
+      
+    } else {
+        // If we don't have any SHOWN cards
+        card.classList.add("open", "show");
+        shownCards.push(this);
+    }
+  })
+  
 }
 
 /*
