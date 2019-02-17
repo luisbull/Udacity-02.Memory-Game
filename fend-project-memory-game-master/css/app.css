@@ -55,7 +55,7 @@ h1 {
     height: 125px;
     width: 125px;
     background: #2e3d49;
-    font-size: 0;
+    font-size: 10px;
     color: #ffffff;
     border-radius: 8px;
     cursor: pointer;
@@ -80,7 +80,9 @@ h1 {
     cursor: default;
     background: #02ccba;
     font-size: 33px;
+    pointer-events: none;
 }
+
 
 /*
  * Styles for the Score Panel
@@ -88,7 +90,7 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 500px;
     margin-bottom: 10px;
 }
 
@@ -107,4 +109,80 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+.timer-container {
+  float: left;
+  width: 180px;
+}
+
+/*
+ * Styles for modal message when game finishes
+ */
+
+.modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eeeeeee6;
+  /* z-index: 99; */
+  transition: all 400ms ease;
+}
+
+.modalContainer {
+  width: 600px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  /* margin-left: 25%;
+  margin-right: 25%; */
+  margin-top: 100px;
+  background: #857979a1;
+  border-radius: 20px;
+  box-shadow: 10px 5px 40px 0 rgba(46, 61, 73, 0.5);
+}
+
+.wellDone {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 80px
+}
+
+.modalText {
+color: white;
+text-align: center;
+font-size: 30px;
+}
+
+.totalRate li{
+  color: red;
+  list-style: none;
+  display: inline-block;
+}
+
+.playAgain {
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 40px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  justify-content: center;
+  background: #d1d1d1bf;
+  cursor: pointer;
 }
