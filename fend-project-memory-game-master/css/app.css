@@ -31,6 +31,7 @@ body {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 80px;
 }
 
 /*
@@ -55,7 +56,7 @@ h1 {
     height: 125px;
     width: 125px;
     background: #2e3d49;
-    font-size: 10px;
+    font-size: 0px;
     color: #ffffff;
     border-radius: 8px;
     cursor: pointer;
@@ -73,13 +74,19 @@ h1 {
 }
 
 .deck .card.show {
-    font-size: 33px;
+    font-size: 35px;
+}
+
+/* This will prevent cards from being clicked twice */
+.deck .card.unclickable {
+    /* display: none; */
+    pointer-events: none;
 }
 
 .deck .card.match {
     cursor: default;
     background: #02ccba;
-    font-size: 33px;
+    font-size: 35px;
     pointer-events: none;
 }
 
@@ -95,6 +102,7 @@ h1 {
 }
 
 .score-panel .stars {
+    font-size: 35px;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -107,13 +115,19 @@ h1 {
 }
 
 .score-panel .restart {
+    font-size: 40px;
     float: right;
     cursor: pointer;
 }
 
 .timer-container {
-  float: left;
-  width: 180px;
+    font-size: 35px;
+    float: left;
+    width: 180px;
+}
+
+.moves {
+    font-size: 35px;
 }
 
 /*
@@ -121,52 +135,52 @@ h1 {
  */
 
 .modal {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #eeeeeee6;
-  /* z-index: 99; */
-  transition: all 400ms ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eeeeeee6;
+    /* z-index: 99; */
+    transition: all 400ms ease;
 }
 
 .modalContainer {
-  width: 600px;
-  height: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  /* margin-left: 25%;
-  margin-right: 25%; */
-  margin-top: 100px;
-  background: #857979a1;
-  border-radius: 20px;
-  box-shadow: 10px 5px 40px 0 rgba(46, 61, 73, 0.5);
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    margin-top: 100px;
+    background: #857979a1;
+    border-radius: 20px;
+    box-shadow: 10px 5px 40px 0 rgba(46, 61, 73, 0.5);
 }
 
 .wellDone {
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 80px
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80px
 }
 
 .modalText {
-color: white;
-text-align: center;
-font-size: 30px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
 }
 
 .totalRate li{
-  color: red;
-  list-style: none;
-  display: inline-block;
+    color: red;
+    list-style: none;
+    display: inline-block;
 }
 
 .playAgain {
