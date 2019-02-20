@@ -1,7 +1,15 @@
 
 
 // SET GAME BOARD //
-const iconsList = ["fa fa-diamond", "fa fa-diamond", "fa fa-paper-plane-o", "fa fa-paper-plane-o", "fa fa-anchor", "fa fa-anchor", "fa fa-bolt", "fa fa-bolt", "fa fa-cube", "fa fa-cube", "fa fa-leaf", "fa fa-leaf", "fa fa-bicycle", "fa fa-bicycle", "fa fa-bomb", "fa fa-bomb"];
+const iconsList = ["fa fa-diamond", "fa fa-diamond",
+                  "fa fa-paper-plane-o", "fa fa-paper-plane-o",
+                  "fa fa-anchor", "fa fa-anchor",
+                  "fa fa-bolt", "fa fa-bolt",
+                  "fa fa-cube", "fa fa-cube",
+                  "fa fa-leaf", "fa fa-leaf",
+                  "fa fa-bicycle", "fa fa-bicycle",
+                  "fa fa-bomb", "fa fa-bomb"];
+
 const cardsContainer = document.querySelector(".deck"); /* deck class from html */
 
 function setGameBoard() {
@@ -39,6 +47,8 @@ function clickCard(card) {
         // We compare 2 opened cards! //
         if(currentCard.innerHTML === previousCard.innerHTML) {
 
+          
+          
           // Matched //
           currentCard.classList.add("match");
           previousCard.classList.add("match");
@@ -51,12 +61,13 @@ function clickCard(card) {
           gameFinished();
 
         } else {
-           // setTimeout has to be implemented in order to allow player seeing second card before "don't match" return cards to hidden possition after clicking second card */
+           /* setTimeout has to be implemented in order to allow player seeing second
+          card before "don't match" return cards to hidden possition after clicking second card */
           setTimeout(function() {
             currentCard.classList.remove("open", "show");
             previousCard.classList.remove("open", "show");
             openedCards = [];
-          },400);
+          },600);
         }
 
       addMove();
@@ -128,10 +139,13 @@ const stars = document.querySelector(".stars");
 function rates(){
 
   if(moves <= 4){
-    stars.innerHTML = `<li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li>`;
+    stars.innerHTML = `<li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>`;
 
   }else if(moves > 4 && moves <= 10){
-    stars.innerHTML = `<li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li>`;
+    stars.innerHTML = `<li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>`;
 
   }else{
     stars.innerHTML = `<li><i class="fa fa-star"></i></li>`;
@@ -174,10 +188,13 @@ function playAgainModal(){
 // RESET BOARD //
 function resetBoardValues(){
 
+  openedCards = [];  /* fixes restart button bug pointed out in the review */
   matchedCards =[];
   moves = 0;
   moveContainer.innerHTML = moves;
-  stars.innerHTML = `<li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li> <li><i class="fa fa-star"></i></li>`;
+  stars.innerHTML = `<li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                       <li><i class="fa fa-star"></i></li>`;
   firstClick = true;
   totalTime = 0;
   hoursContainer.innerHTML = "00";
