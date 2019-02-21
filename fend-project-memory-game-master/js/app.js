@@ -66,6 +66,7 @@ function clickCard(card) {
   });
 }
 
+
 //IS MATCHED?
 function isMatched(currentCard, previousCard) {
 
@@ -103,7 +104,7 @@ let moves = 0;
 
 function addMove(){
   moves++;
-  moveContainer.innerHTML = moves;
+  moveContainer.innerHTML = moves + " Moves";
 }
 
 
@@ -175,9 +176,12 @@ function restartGameBoard(){
 
     setGameBoard();
     resetBoardValues();
+    
   });
 }
+
 restartGameBoard();
+
 
 // RESTART GAME (PLAY AGAIN) BUTTON//
 const playAgain = document.querySelector(".playAgain");
@@ -188,8 +192,9 @@ function playAgainModal(){
 
     setGameBoard();
     resetBoardValues();// restartGameBoard();
-
-    modal.style.top = "-100%";
+    moveContainer.innerHTML = moves + " Moves";
+    
+    modal.style.top = "-180%";
   });
 }
 
@@ -200,7 +205,7 @@ function resetBoardValues(){
   openedCards = [];  /* fixes restart button bug pointed out in the review */
   matchedCards =[];
   moves = 0;
-  moveContainer.innerHTML = moves;
+  moveContainer.innerHTML = moves + " Moves";
   stars.innerHTML = `<li><i class="fa fa-star"></i></li>
                       <li><i class="fa fa-star"></i></li>
                        <li><i class="fa fa-star"></i></li>`;
