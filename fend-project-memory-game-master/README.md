@@ -10,7 +10,7 @@
 
 ## How game was built
 
-The starter project given by Udacity [Original files](https://github.com/udacity/fend-project-memory-game/archive/master.zip) had some HTML and CSS styling to display a static version of the Memory Game project. I needed to convert this project from a static project to an interactive one. This required modifying the HTML and CSS files, but primarily the JavaScript file.
+The starter project given by Udacity [link](https://github.com/udacity/fend-project-memory-game.git) or [download original files](https://github.com/udacity/fend-project-memory-game/archive/master.zip) had some HTML and CSS styling to display a static version of the Memory Game project. I needed to convert this project from a static project to an interactive one. This required modifying the HTML and CSS files, but primarily the JavaScript file.
 
 To get started, open `js/app.js` and start building out the app's functionality
 
