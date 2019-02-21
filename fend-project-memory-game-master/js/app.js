@@ -148,12 +148,12 @@ function modalMessage() {
 const stars = document.querySelector(".stars");
 function rates(){
 
-  if(moves <= 4){
+  if(moves <= 12){
     stars.innerHTML = `<li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                           <li><i class="fa fa-star"></i></li>`;
 
-  }else if(moves > 4 && moves <= 10){
+  }else if(moves > 12 && moves <= 18){
     stars.innerHTML = `<li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>`;
 
