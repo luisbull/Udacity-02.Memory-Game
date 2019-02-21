@@ -4,7 +4,9 @@
 
 * [Instructions](#instructions)
 * [Contributing](#contributing)
-* [How to play](#howtoplay)
+* [Insallation](#installation)
+* [How to play](#how to play)
+* [Known issue](#known issue)
 
 ## Instructions
 
@@ -20,5 +22,37 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Installation
+
+Go to: https://github.com/luisbull/udacity-memory-game.git
+Click on: Clone or Download.  (green color tab)
+Download Zip file.
+Load index.html in browser.
+Play the game
+
 ## How to play
+
+8 pair of cards are displayed randomly (16 cards in total) on a deck for player to match them
+
+When player click a first card:
+  -A card will be shown
+
+When you click in a second card:
+  - The timer will start
+  - If both cards match, cards remain open and change color
+  - If both cards don’t match, cards get hidden.
+
+Player will be rate depending the amount of moves player had taken to show all cards.
+
+Player can restart the game at any time by clicking restart icon on the top right of the deck
+
+When player matched all the cards:
+  - A pop up message will be shown telling the player time and moves taken to complete it.
+  - Players rate
+  - Button to play again players rate and a play again button.
+  
+## Known issue
+
+If player click very quick a third card can be seen.  Though it will count as part of the next move.
+
 
