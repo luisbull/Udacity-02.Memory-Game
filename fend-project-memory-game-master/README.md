@@ -12,7 +12,7 @@
 
 The starter project given by Udacity [link](https://github.com/udacity/fend-project-memory-game.git) or download original files directly by clicking [here](https://github.com/udacity/fend-project-memory-game/archive/master.zip) had some HTML and CSS styling to display a static version of the Memory Game project. I needed to convert this project from a static project to an interactive one. This required modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality.
+I started by analysing the files given and started building out the app's functionality from there.
 
 For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
@@ -47,7 +47,8 @@ Player will be rate by stars depending the amount of moves player had taken to s
 Player can restart the game at any time by clicking restart icon on the top right of the deck.
 
 When player matched all the cards:
-  - A pop up message will be shown telling the player time and moves taken to complete it.
+  - A pop up message will be shown congratulating the player for finishing.
+  - Time and moves taken to complete it.
   - Players rate.
   - Button to play again players rate and a play again button.
   
