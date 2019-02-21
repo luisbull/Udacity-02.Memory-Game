@@ -34,49 +34,28 @@ let firstClick = true;
 function clickCard(card) {
 
   card.addEventListener("click", function() {
-
-    // One card is open already //
-    if(openedCards.length === 1) {
-
-      const currentCard = this;
-      const previousCard = openedCards[0];
-
-      card.classList.add("open", "show");
-      openedCards.push(this);
-
-        // We compare 2 opened cards! //
-        if(currentCard.innerHTML === previousCard.innerHTML) {
-
-          
-          
-          // Matched //
-          currentCard.classList.add("match");
-          previousCard.classList.add("match");
-
-          matchedCards.push(currentCard,previousCard); /* in this case "this" dont work as would take only 8 pair and we need 16 to match icons */
-
-          openedCards = []
-
-          // Check if game has finished //
-          gameFinished();
-
-        } else {
-           /* setTimeout has to be implemented in order to allow player seeing second
-          card before "don't match" return cards to hidden possition after clicking second card */
-          setTimeout(function() {
-            currentCard.classList.remove("open", "show");
-            previousCard.classList.remove("open", "show");
-            openedCards = [];
-          },600);
-        }
-
-      addMove();
-      rates(moves);
-      // starts timer and prevent from speeding up //
+// starts timer and prevent from speeding up //
       if (firstClick){
         startTimer();
         firstClick = false;
       }
+    const currentCard = this;
+    const previousCard = openedCards[0];
+    
+    // One card is open already //
+    if(openedCards.length === 1) {
+
+      card.classList.add("open", "show");
+      openedCards.push(this);
+
+      // We compare 2 opened cards! //
+      isMatched(currentCard, previousCard)
+      
+
+      addMove();
+      rates(moves);
+      
+      
 
     } else {
       // we don't have any open cards //
@@ -85,6 +64,36 @@ function clickCard(card) {
       }
 
   });
+}
+
+//IS MATCHED?
+function isMatched(currentCard, previousCard) {
+
+  if(currentCard.innerHTML === previousCard.innerHTML) {
+
+    // Matched //
+    currentCard.classList.add("match");
+    previousCard.classList.add("match");
+
+    matchedCards.push(currentCard,previousCard); /* in this case "this" dont work as would take only 8 pair and we need 16 to match icons */
+
+    openedCards = []
+
+    // Check if game has finished //
+    gameFinished();
+
+  } else {
+     /* setTimeout has to be implemented in order to allow player seeing second card
+      before "don't match" return cards to hidden possition after clicking second card */
+    setTimeout(function() {
+      currentCard.classList.remove("open", "show", "unclickable");
+      previousCard.classList.remove("open", "show", "unclickable");
+
+    },1000);
+    openedCards = []; /* It will fix bug 2 */
+
+  }
+
 }
 
 
