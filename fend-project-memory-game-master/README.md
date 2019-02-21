@@ -5,8 +5,8 @@
 * [Instructions](#instructions)
 * [Contributing](#contributing)
 * [Insallation](#installation)
-* [How to play](#how to play)
-* [Known issue](#known issue)
+* [How to play](#howToPlay)
+* [Known issue](#knownIssue)
 
 ## Instructions
 
@@ -25,17 +25,17 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Installation
 
 Go to: https://github.com/luisbull/udacity-memory-game.git
-Click on: Clone or Download.  (green color tab)
-Download Zip file.
-Load index.html in browser.
-Play the game
+  - Click on: Clone or Download.  (green color tab)
+  - Download Zip file.
+  - Load index.html in browser.
+  - Play the game
 
 ## How to play
 
 8 pair of cards are displayed randomly (16 cards in total) on a deck for player to match them
 
 When player click a first card:
-  -A card will be shown
+  - A card will be shown
 
 When you click in a second card:
   - The timer will start
