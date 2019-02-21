@@ -90,7 +90,7 @@ function isMatched(currentCard, previousCard) {
       currentCard.classList.remove("open", "show", "unclickable");
       previousCard.classList.remove("open", "show", "unclickable");
 
-    },1000);
+    },500);
     openedCards = []; /* It will fix bug 2 */
 
   }
