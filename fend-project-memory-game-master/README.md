@@ -4,13 +4,13 @@
 
 * [How game was built](#how-game-was-built)
 * [Contributing](#contributing)
-* [Insallation](#installation)
-* [How to play](#how-To-Play)
-* [Known issue](#known-Issue)
+* [Game insallation](#game-installation)
+* [How to play](#how-to-play)
+* [Known issue](#known-issue)
 
 ## How game was built
 
-The starter project given by Udacity [link](https://github.com/udacity/fend-project-memory-game.git) or [download original files](https://github.com/udacity/fend-project-memory-game/archive/master.zip) had some HTML and CSS styling to display a static version of the Memory Game project. I needed to convert this project from a static project to an interactive one. This required modifying the HTML and CSS files, but primarily the JavaScript file.
+The starter project given by Udacity [link](https://github.com/udacity/fend-project-memory-game.git) or download original files directly by clicking[here](https://github.com/udacity/fend-project-memory-game/archive/master.zip) had some HTML and CSS styling to display a static version of the Memory Game project. I needed to convert this project from a static project to an interactive one. This required modifying the HTML and CSS files, but primarily the JavaScript file.
 
 To get started, open `js/app.js` and start building out the app's functionality
 
@@ -22,7 +22,7 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Installation
+## Game installation
 
 Go to: https://github.com/luisbull/udacity-memory-game.git
   - Click on: Clone or Download.  (green color tab)
