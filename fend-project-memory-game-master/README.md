@@ -5,8 +5,8 @@
 * [Instructions](#instructions)
 * [Contributing](#contributing)
 * [Insallation](#installation)
-* [How to play](#howToPlay)
-* [Known issue](#knownIssue)
+* [How to play](#how-To-Play)
+* [Known issue](#known-Issue)
 
 ## Instructions
 
@@ -24,13 +24,14 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Installation
 
+Open the [Live Preview](https://luisbull.github.io/udacity-memory-game/)
 Go to: https://github.com/luisbull/udacity-memory-game.git
   - Click on: Clone or Download.  (green color tab)
   - Download Zip file.
   - Load index.html in browser.
   - Play the game
 
-## How to play
+## How-to-play
 
 8 pair of cards are displayed randomly (16 cards in total) on a deck for player to match them
 
@@ -51,7 +52,7 @@ When player matched all the cards:
   - Players rate
   - Button to play again players rate and a play again button.
   
-## Known issue
+## Known-issue
 
 If player click very quick a third card can be seen.  Though it will count as part of the next move.
 
