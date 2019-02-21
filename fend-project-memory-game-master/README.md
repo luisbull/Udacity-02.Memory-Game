@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [How game was built](#how-game-was-built)
 * [Contributing](#contributing)
 * [Insallation](#installation)
 * [How to play](#how-To-Play)
 * [Known issue](#known-Issue)
 
-## Instructions
+## How game was built
 
 The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
@@ -24,14 +24,13 @@ For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Installation
 
-Open the [Live Preview](https://luisbull.github.io/udacity-memory-game/)
 Go to: https://github.com/luisbull/udacity-memory-game.git
   - Click on: Clone or Download.  (green color tab)
   - Download Zip file.
   - Load index.html in browser.
   - Play the game
 
-## How-to-play
+## How to-play
 
 8 pair of cards are displayed randomly (16 cards in total) on a deck for player to match them
 
