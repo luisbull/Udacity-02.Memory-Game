@@ -8,6 +8,7 @@
 * [Game insallation](#game-installation)
 * [How to play](#how-to-play)
 * [Known issue](#known-issue)
+* [External sources](#external-sources)
 
 ## How game was built
 
@@ -57,4 +58,6 @@ When player matched all the cards:
 
 If player click very quick a third card can be seen.  Though it will count as part of the next move.
 
+## External sources
 
+Inside JS file Udacity provided a shuffle function which was taken from [here](http://stackoverflow.com/a/2450976)
