@@ -40,7 +40,7 @@ h1 {
 
 .deck {
     width: 660px;
-    min-height: 680px;
+    height: 680px;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
     padding: 32px;
     border-radius: 10px;
@@ -249,7 +249,6 @@ h1 {
 @media screen and (max-width: 700px){
   .deck  {
 
-    background-color: red;
     display: flex;
     max-width: 330px;
     max-height: 340px;
