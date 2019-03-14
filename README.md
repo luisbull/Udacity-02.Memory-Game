@@ -12,7 +12,7 @@
 
 ## How game was built
 
-The starter project given by Udacity [link](https://github.com/udacity/fend-project-memory-game.git) or download original files directly by clicking [here](https://github.com/udacity/fend-project-memory-game/archive/master.zip) had some HTML and CSS styling to display a static version of the Memory Game project. I needed to convert this project from a static project to an interactive one. This required modifying the HTML and CSS files, but primarily the JavaScript file.
+The starter project given by Udacity [link](https://github.com/udacity/fend-project-memory-game.git) or download original files directly by clicking [here](https://github.com/udacity/fend-project-memory-game/archive/master.zip) There are three files (HTML, CSS, JS) that display a static version of the Memory Game project. I needed to convert this project from a static project to an interactive one. This required modifying the HTML and CSS files, but primarily the JavaScript file.
 
 I started by analysing the files given and started building out the app's functionality from there.
 
@@ -60,4 +60,5 @@ If player click very quick a third card can be seen.  Though it will count as pa
 
 ## External sources
 
+Fonts and Icons for the game were taken from [https://fontawesome.com/](https://fontawesome.com/) and [https://fonts.google.com/] (https://fonts.google.com/)
 Inside JS file Udacity provided a shuffle function which was taken from [here](http://stackoverflow.com/a/2450976)
