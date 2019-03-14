@@ -60,5 +60,5 @@ If player click very quick a third card can be seen.  Though it will count as pa
 
 ## External sources
 
-Fonts and Icons for the game were taken from [https://fontawesome.com/](https://fontawesome.com/) and [https://fonts.google.com/] (https://fonts.google.com/)
-Inside JS file Udacity provided a shuffle function which was taken from [here](http://stackoverflow.com/a/2450976)
+Fonts and Icons for the game were taken from [https://fontawesome.com/](https://fontawesome.com/) and [https://fonts.google.com/](https://fonts.google.com/).
+Inside JS file Udacity provided a shuffle function which was taken from [http://stackoverflow.com/a/2450976](http://stackoverflow.com/a/2450976).
