@@ -1,0 +1,283 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 80px;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0px;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+    pointer-events: none;
+}
+
+.deck .card.show {
+    font-size: 40px;
+}
+
+/* This will prevent cards from being clicked twice */
+.deck .card.unclickable {
+    /* display: none; */
+    pointer-events: none;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 35px;
+    pointer-events: none;
+}
+
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    font-size: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+.timer-container {
+    font-size: 35px;
+    float: left;
+    width: 180px;
+}
+
+.moves {
+    font-size: 35px;
+}
+
+/*
+ * Styles for modal message when game finishes
+ */
+
+.modal {
+    position: absolute;
+    top: -180%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eeeeeee6;
+    /* z-index: 99; */
+    transition: all 400ms ease;
+}
+
+.modalContainer {
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    margin-top: 100px;
+    background: #857979a1;
+    border-radius: 20px;
+    box-shadow: 10px 5px 40px 0 rgba(46, 61, 73, 0.5);
+}
+
+.wellDone {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80px
+}
+
+.modalText {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+.totalRate li{
+    color: red;
+    list-style: none;
+    display: inline-block;
+}
+
+.playAgain {
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 40px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  justify-content: center;
+  background: #d1d1d1bf;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+  h1 {
+
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .timer-container{
+
+    width: 100px;
+    font-size: 20px;
+    margin-left:20px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .score-panel, .stars li, .moves, .restart, .fa-repeat{
+
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* color: red; */
+  }
+}
+@media screen and (max-width: 700px){
+  .stars li {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .score-panel{
+
+    /* background-color: blue; */
+    width: 320px;
+    align-items:center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .deck  {
+
+    display: flex;
+    max-width: 330px;
+    max-height: 340px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card, i, li, .fa{
+
+/*     font-size: 20px; */
+    max-width: 60px;
+    max-height: 60px;
+    margin: auto;
+  }
+}
+
+ @media screen and (max-width: 700px) {
+   .modalContainer, .modalText, .totalRate, li, .playAgain   {
+
+    display: flex;
+    font-size: 100%;
+    max-width: 80%;
+    max-height: 100%;
+    display: inline-block;
+    text-align: center;
+    justify-content:space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
