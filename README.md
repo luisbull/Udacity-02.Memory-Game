@@ -1,6 +1,6 @@
 # Udacity-Memory-Game
 
-# [Play the Game Here]([https://github.com/udacity/fend-project-memory-game.git](https://luisbull.github.io/Udacity-02.Memory-Game/))
+# [Play the Game Here](https://luisbull.github.io/Udacity-02.Memory-Game)
 
 ## Table of Contents
 
